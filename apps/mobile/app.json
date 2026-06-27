@@ -1,17 +1,20 @@
 {
   "expo": {
-    "name": "mobile",
-    "slug": "mobile",
+    "name": "AutoFix GH",
+    "slug": "autofixgh",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "scheme": "autofixgh",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.stacklabghana.autofixgh"
     },
     "android": {
+      "package": "com.stacklabghana.autofixgh",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#0B0E1A",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
@@ -19,7 +22,26 @@
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      "expo-font",
+      "expo-splash-screen",
+      "expo-secure-store",
+      "expo-maps",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "AutoFix GH needs your location to dispatch roadside assistance.",
+          "locationWhenInUsePermission": "AutoFix GH needs your location to dispatch roadside assistance."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
     }
   }
 }
