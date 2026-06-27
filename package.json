@@ -1,0 +1,17 @@
+{
+  "name": "autofixgh",
+  "version": "0.0.1",
+  "private": true,
+  "packageManager": "pnpm@11.9.0",
+  "scripts": {
+    "mobile": "pnpm --filter mobile start",
+    "garage-portal": "pnpm --filter garage-portal dev",
+    "build:garage-portal": "pnpm --filter garage-portal build",
+    "supabase:migrate": "supabase db push",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

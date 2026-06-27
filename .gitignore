@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Environment variables — NEVER commit these
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+.next/
+out/
+dist/
+build/
+
+# Expo
+.expo/
+apps/mobile/.expo/
+apps/mobile/dist/
+
+# Supabase
+supabase/.temp/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Obsidian vault — docs only, not code
+AutoFixGH/
+
+# PRD — keep locally, not in repo
+AutoFixGH_PRD_v3.0.pdf
+
+# Playwright
+.playwright-mcp/
+playwright-report/
+test-results/
+
+# TypeScript
+*.tsbuildinfo
